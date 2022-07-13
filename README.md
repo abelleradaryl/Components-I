@@ -6,10 +6,10 @@ In this project we are going to be building a news feed reader. The goal is to h
 
 ## Git Setup
 
-* [ ] Create a forked copy of this project.
-* [ ] Clone your OWN version of the repository.
-* [ ] Implement the project on the main branch, committing changes regularly.
-* [ ] Push commits: `git push origin main`.
+* [X] Create a forked copy of this project.
+* [X] Clone your OWN version of the repository.
+* [X] Implement the project on the main branch, committing changes regularly.
+* [X] Push commits: `git push origin main`.
 
 ## Running the project
 
@@ -17,8 +17,8 @@ This project uses [Webpack and Babel](https://bloomtech-1.wistia.com/medias/bhi9
 
 Do not **move or rename any files** in this project. The website's source files live inside the `src` folder. Do not make changes to any files outside of the `src` folder, unless it's new dependecies declared in the `package.json` due to installing NPM libraries (E.G. `npm i lodash`).
 
-* [ ] Run `npm install` to download the project's dependencies.
-* [ ] Run `npm start` to launch the website on `http://localhost:3000`.
+* [X] Run `npm install` to download the project's dependencies.
+* [X] Run `npm start` to launch the website on `http://localhost:3000`.
 
 ## MVP
 
@@ -30,7 +30,7 @@ Do not **move or rename any files** in this project. The website's source files 
 
 ### The Menu Component
 
-* [ ] Follow the instructions found in the Menu.js file to complete the JavaScript functionality.
+* [X] Follow the instructions found in the Menu.js file to complete the JavaScript functionality.
 
 ## Submission Format
 

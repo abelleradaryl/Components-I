@@ -87,8 +87,98 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Daryls Song',
+    date: 'Dec 9th, 1993',
+    firstParagraph: `It's not about winning, it's about fun
+    What's that?
+    Fun is when you, fun is, it's like, it's kind of
+    Sort of like a, what is fun? I
+    Let me spell it for you
+    
+    F is for friends who do stuff together
+    U is for you and me
+    N is for anywhere and anytime at all
+    Down here in the deep blue sea
+ `,
+
+    secondParagraph: `   
+    F is for fire that burns down the whole town
+    U is for uranium, bombs
+    N is for no survivors when you
+    
+    Plankton those thing aren't what fun is all about
+    Now do it like this
+    
+    F is for friends who do stuff to
+    Never, that's completely idiotic
+    
+  `,
+
+    thirdParagraph: `  Here, let me help you
+    F is for friends who do stuff together
+    U is for you and me
+    Try it
+    N is for anywhere and anytime at all
+    Down here in the deep blue sea
+    
+    Wait, I don't understand this
+    I feel all tingly inside, should we stop?
+    No, that's how you're suppose to feel
+    Well, I like it, let's do it again
+    
+    Okay
+    F is for frolicking through all the flowers
+    U is for Ukulele
+    N is for nose picking, sharing gum and sand licking
+    Here with my best buddy`
   }
+  
+
 ];
+
+function articleMaker (artObj) {
+  const artMain = document.createElement("div");
+  const artTitle = document.createElement("h2");
+  const artDate = document.createElement("p");
+  const artPOne = document.createElement("p");
+  const artPTwo = document.createElement("p");
+  const artPThree = document.createElement("p");
+  const expandBtn = document.createElement("span");
+
+  artMain.classList.add("article");
+  artDate.classList.add("date");
+  expandBtn.classList.add("expandButton");
+
+  artMain.appendChild(artTitle);
+  artMain.appendChild(artDate);
+  artMain.appendChild(artPOne);
+  artMain.appendChild(artPTwo);
+  artMain.appendChild(artPThree);
+  artMain.appendChild(expandBtn);
+
+  artTitle.textContent = artObj.title;
+  artDate.textContent = artObj.date;
+  artPOne.textContent = artObj.firstParagraph;
+  artPTwo.textContent = artObj.secondParagraph;
+  artPThree.textContent = artObj.thirdParagraph;
+  expandBtn.textContent = "x";
+
+  // console.log(artMain);
+  
+  expandBtn.addEventListener("click", () => {
+  artMain.classList.toggle("article-open");
+  })
+
+  return artMain;
+
+}
+
+data.forEach(article => {
+  document.querySelector("div.articles").appendChild(articleMaker(article));
+})
+
 
 /*
   Step 1: Write a component called 'articleMaker' to create an article.
