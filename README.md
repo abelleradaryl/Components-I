@@ -24,9 +24,9 @@ Do not **move or rename any files** in this project. The website's source files 
 
 ### The Articles Component
 
-* [ ] Follow the instructions found in the Articles.js file to complete the JavaScript functionality and add the components to the DOM.
+* [X] Follow the instructions found in the Articles.js file to complete the JavaScript functionality and add the components to the DOM.
 
-* [ ] Add a few articles of your own to the data array. Notice how our JavaScript code automatically creates the new articles. Write the code once and add as many components as you want all while maintaining the functionality we built!
+* [X] Add a few articles of your own to the data array. Notice how our JavaScript code automatically creates the new articles. Write the code once and add as many components as you want all while maintaining the functionality we built!
 
 ### The Menu Component
 
@@ -34,4 +34,4 @@ Do not **move or rename any files** in this project. The website's source files 
 
 ## Submission Format
 
-* [ ] Paste a link to your repo into the appropriate canvas input.
+* [X] Paste a link to your repo into the appropriate canvas input.
